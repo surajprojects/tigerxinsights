@@ -16,7 +16,7 @@ export function MobileHeader() {
                 <BurgerIcon />
             </button>
             {isOpen && (
-                <ul className="absolute right-0 bg-white shadow-md p-5 w-32 z-50">
+                <ul className="absolute right-0 bg-white shadow-md p-5 w-32 z-50 rounded-md">
                     <li>
                         <a href="/work" onClick={toggleMenu}>Works</a>
                     </li>
