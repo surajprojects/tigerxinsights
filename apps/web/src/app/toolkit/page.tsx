@@ -10,7 +10,7 @@ export default function Toolkit() {
                     <h2 className="font-bold text-4xl">Toolkit</h2>
                 </div>
                 {/* Container for cards */}
-                <div className="px-2 2xl:px-16 my-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
+                <div className="px-0 2xl:px-16 my-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
                     <Tool />
                     <Tool />
                     <Tool />

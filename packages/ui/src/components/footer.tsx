@@ -42,8 +42,9 @@ export function Footer() {
                             </a>
                         </div>
                     </div>
-                    <div className="text-sm sm:text-base text-black font-medium text-center">
-                        Copyright &copy; 2025 | Tiger Insights | All rights reserved
+                    <div className="text-sm sm:text-base text-black font-medium text-center flex flex-col items-center">
+                        <span>Made with ❤️ by TigerxInsights &copy; 2025</span>
+                        <span>Your insights, our priority</span>
                     </div>
                 </div>
             </footer>

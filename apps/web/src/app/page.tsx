@@ -47,8 +47,6 @@ export default function Home() {
           <Post />
           <Post />
           <Post />
-          <Post />
-          <Post />
         </div>
         {/* Container for button */}
         <div className="flex justify-center">
