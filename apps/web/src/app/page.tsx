@@ -1,5 +1,6 @@
 // https://www.figma.com/design/tDO9VaIliFxysvSfW0bgJO/Portfolio-UI---Web-%26-Mobile-(Community)?node-id=0-1&p=f&t=5KtxU7De2coqQrmm-0
 
+import Image from 'next/image';
 import { Post, Works } from "@tigerxinsights/ui";
 
 export default function Home() {
@@ -11,25 +12,31 @@ export default function Home() {
         <div className="py-8 sm:py-10 flex flex-col ">
           {/* Title */}
           <h1 className="w-full lg:w-3/4 font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight flex flex-col justify-center text-center lg:text-left">
-            <span>Hi, I am Suraj,</span>
-            <span>a.k.a. Tiger,</span>
-            <span>Full Stack Web Developer!</span>
+            <span>Hi, I&apos;m Suraj,</span>
+            <span>a.k.a. Tiger 👋</span>
+            <span>🚀 Full Stack Web Developer!</span>
           </h1>
           {/* Description */}
           <p className="w-full lg:w-3/4 my-5 sm:my-8 text-md lg:text-lg font-medium whitespace-normal text-center lg:text-left">
-            Discovering the wonders of computers and more! 💻✨
-            Join me at #tigerxinsights 🌟
-            Share your experiences and insights with us! 📩
+            Passionate about building with TypeScript, React, Node.js
+            💻 Exploring the wonders of computers & software development!
+            🌟 Sharing insights at #tigerxinsights
+            – Let&apos;s learn & grow together!
           </p>
           {/* Call-to-action */}
           <div className="self-center lg:self-start">
-            <a href="/contact" className="bg-[#FF6464] hover:bg-[#fb5858] px-4 py-3 text-white rounded">Get in touch</a>
+            <a href="/contact" className="bg-[#FF6464] hover:bg-[#fb5858] px-4 py-3 text-white rounded">Let&apos;s Connect</a>
           </div>
         </div>
         {/* Profile image placeholder */}
         <div className="w-auto lg:w-1/2 flex flex-col justify-center">
           <div className="bg-[#EDF7FA] m-auto w-48 sm:w-60 rounded-full">
-            <img src="profile_logo.png" alt="profile_pic" className="translate-x-1 -translate-y-3" />
+            <Image
+              src="/profile_logo.png"
+              alt="profile_pic"
+              width={400}
+              height={400}
+              className="translate-x-1 -translate-y-3" />
           </div>
         </div>
       </div>
