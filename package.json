@@ -6,7 +6,8 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "startapp": "cd ./apps/web/ && npm run start"
+    "buildapp": "pnpm install && cd ./packages/db/ && prisma generate && cd .. && cd ..",
+    "startapp": "cd ./apps/web/ && pnpm run build && pnpm run start"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
