@@ -8,8 +8,8 @@ export function Works({
 }) {
     return (
         <>
-            <div className="py-6 sm:py-8 px-2 sm:px-4 border-b-2 border-b-[#E0E0E0] flex flex-col lg:flex-row items-center h-64">
-                <div className="px-2 sm:px-8 lg:px-0  w-72 sm:w-72 md:w-72 lg:w-96 xl:w-72">
+            <div className="py-6 sm:py-8 px-2 sm:px-4 border-b-2 border-b-[#E0E0E0] flex flex-col lg:flex-row items-center">
+                <div className="px-2 sm:px-8 lg:px-0 w-72">
                     <img src={imgsrc} alt={imgname} className="aspect-square object-cover rounded-lg" />
                 </div>
                 <div className="mx-2 sm:mx-8 mt-4 md:my-1 hover:cursor-pointer overflow-clip">
