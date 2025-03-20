@@ -1,11 +1,11 @@
-import prisma from "@tigerxinsights/db";
-import { z } from "zod";
+// import prisma from "@tigerxinsights/db";
+// import { z } from "zod";
 
-export const contactInput = z.object({
-    name: z.string(),
-    email: z.string(),
-    message: z.string(),
-});
+// export const contactInput = z.object({
+//     name: z.string(),
+//     email: z.string(),
+//     message: z.string(),
+// });
 
 export async function POST() {
     try {
@@ -28,6 +28,7 @@ export async function POST() {
         return Response.json({ message: "Successfully stored the data!" }, { status: 201 });
     }
     catch (error) {
+        console.log(error)
         return Response.json({ message: "Internal Server Error" }, { status: 500 });
     }
 };
