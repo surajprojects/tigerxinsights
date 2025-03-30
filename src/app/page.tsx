@@ -1,103 +1,81 @@
-import Image from "next/image";
+// https://www.figma.com/design/tDO9VaIliFxysvSfW0bgJO/Portfolio-UI---Web-%26-Mobile-(Community)?node-id=0-1&p=f&t=5KtxU7De2coqQrmm-0
+
+import Image from 'next/image';
+import { Post } from "@/components/cards/post";
+import { Works } from "@/components/cards/work";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      {/* Container 1 */}
+      <div className="w-full px-4 sm:px-20 md:px-32 xl:px-64 py-14 md:py-20 flex flex-col-reverse lg:flex-row justify-between">
+        {/* Container for title, description and call-to-action etc */}
+        <div className="py-8 sm:py-10 flex flex-col ">
+          {/* Title */}
+          <h1 className="w-full lg:w-3/4 font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight flex flex-col justify-center text-center lg:text-left">
+            <span>Hi, I&apos;m Suraj,</span>
+            <span>a.k.a. Tiger 👋</span>
+            <span>🚀 Full Stack Web Developer!</span>
+          </h1>
+          {/* Description */}
+          <p className="w-full lg:w-3/4 my-5 sm:my-8 text-md lg:text-lg font-medium whitespace-normal text-center lg:text-left">
+            Passionate about building with TypeScript, React, Node.js
+            💻 Exploring the wonders of computers & software development!
+            🌟 Sharing insights at #tigerxinsights
+            – Let&apos;s learn & grow together!
+          </p>
+          {/* Call-to-action */}
+          <div className="self-center lg:self-start">
+            <a href="/contact" className="bg-[#FF6464] hover:bg-[#fb5858] px-4 py-3 text-white rounded">Let&apos;s Connect</a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        {/* Profile image placeholder */}
+        <div className="w-auto lg:w-1/2 flex flex-col justify-center">
+          <div className="bg-[#EDF7FA] m-auto w-48 sm:w-60 rounded-full">
+            <Image
+              src="/profile_logo.png"
+              alt="profile_pic"
+              width={400}
+              height={400}
+              priority={true}
+              className="translate-x-1 -translate-y-3" />
+          </div>
+        </div>
+      </div>
+      {/* Container 2 */}
+      <div className="w-full bg-[#EDF7FA] px-4 sm:px-20 md:px-32 xl:px-64 py-10">
+        {/* Container for title and button */}
+        <div className="flex justify-center lg:justify-between">
+          {/* Title */}
+          <h2 className="font-semibold text-xl">Recent posts</h2>
+          {/* Button */}
+          <a href="/blog" className="text-blue-500 underline hidden lg:block">view all</a>
+        </div>
+        {/* Container for cards */}
+        <div className="py-5 flex justify-around flex-wrap gap-8">
+          <Post />
+          <Post />
+          <Post />
+        </div>
+        {/* Container for button */}
+        <div className="flex justify-center">
+          {/* Button */}
+          <a href="/blog" className="text-white lg:text-blue-500 no-underline lg:underline bg-[#FF6464] px-3 py-1 rounded-3xl block lg:hidden">view all</a>
+        </div>
+      </div>
+      {/* Container 3 */}
+      <div className="w-full px-4 sm:px-20 md:px-32 xl:px-64 py-10">
+        {/* Container for title */}
+        <div className="flex justify-center lg:justify-between">
+          <h2 className="font-semibold text-xl">Featured works</h2>
+        </div>
+        {/* Container for cards */}
+        <div>
+          <Works />
+          <Works />
+          <Works />
+        </div>
+      </div>
+    </>
   );
-}
+};
