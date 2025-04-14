@@ -1,29 +1,36 @@
-// import prisma from "@tigerxinsights/db";
-// import { z } from "zod";
+import prisma from "@tigerxinsights/db";
+import { z } from "zod";
 
-// export const contactInput = z.object({
-//     name: z.string(),
-//     email: z.string(),
-//     message: z.string(),
-// });
+interface contactFormType {
+    name: string,
+    email: string,
+    message: string,
+}
 
-export async function POST() {
+export const contactInput = z.object({
+    name: z.string(),
+    email: z.string(),
+    message: z.string(),
+});
+
+export async function POST(req: Request) {
     try {
-        // const parsedInput = contactInput.safeParse();
+        const data: contactFormType = await req.json();
+        const parsedInput = contactInput.safeParse(data);
 
-        // // if (!parsedInput.success) {
-        // //     return res.status(411).json({ message: parsedInput.error });
-        // // }
+        if (!parsedInput.success) {
+            return Response.json({ message: parsedInput.error }, { status: 411 });
+        }
 
-        // const { name, email, message } = parsedInput.data;
+        const { name, email, message } = parsedInput.data;
 
-        // const contactData = await prisma.contact.create({
-        //     data: {
-        //         name,
-        //         email,
-        //         message
-        //     }
-        // });
+        await prisma.contact.create({
+            data: {
+                name,
+                email,
+                message
+            }
+        });
 
         return Response.json({ message: "Successfully stored the data!" }, { status: 201 });
     }
