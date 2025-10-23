@@ -1,0 +1,9 @@
+export default function ArrowDown() {
+    return (
+        <>
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 animate-bounce fill-black rounded-full border border-gray-200 m-2 p-2" viewBox="0 0 25 25">
+                <path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z" />
+            </svg>
+        </>
+    );
+};

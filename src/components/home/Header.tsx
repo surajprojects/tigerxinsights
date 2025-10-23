@@ -19,7 +19,7 @@ export default function Header() {
                             <a href="#">Contact</a>
                         </li>
                         {/* CTA */}
-                        <li className="text-white text-sm flex justify-center items-center px-4 py-2 rounded-xl mx-2 duration-300 ease-out hover:cursor-pointer bg-linear-to-r from-[#7c3bed] to-[#3c83f6]">
+                        <li className="text-white text-sm flex justify-center items-center px-4 py-2 rounded-xl mx-2 duration-300 ease-out hover:cursor-pointer hover:brightness-95 bg-linear-to-r from-[#7c3bed] to-[#3c83f6]">
                             <a href="#">Hire Me</a>
                         </li>
                     </ul>

@@ -85,7 +85,7 @@ export default function Contact() {
                     ></textarea>
                 </div>
                 {/* Button */}
-                <button type="submit" disabled={state.submitting} className="bg-linear-to-r from-[#7c3bed] to-[#3c83f6]  text-white w-full text-sm font-medium py-3 rounded-xl hover:cursor-pointer duration-300 ease-out outline-none">{state.submitting ? <div className="flex justify-center items-center w-full"><Spinner customize={true} /></div> : "Send Message"}</button>
+                <button type="submit" disabled={state.submitting} className="bg-linear-to-r from-[#7c3bed] to-[#3c83f6]  text-white w-full text-sm font-medium py-3 rounded-xl hover:brightness-95 hover:cursor-pointer duration-300 ease-out outline-none">{state.submitting ? <div className="flex justify-center items-center w-full"><Spinner customize={true} /></div> : "Send Message"}</button>
             </form>
         </>
     );
