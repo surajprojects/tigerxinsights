@@ -3,9 +3,9 @@ import CodeIcon from "../components/icons/Code";
 import Contact from "../components/home/Contact";
 import ToolBoxIcon from "../components/icons/Tool";
 import RocketIcon from "../components/icons/Rocket";
-import SkillCard from "../components/home/SkillCard";
+import SkillCard from "../components/cards/SkillCard";
 import DatabaseIcon from "../components/icons/Database";
-import ProjectCard from "../components/home/ProjectCard";
+import ProjectCard from "../components/cards/ProjectCard";
 import SectionHeader from "../components/home/SectionHeader";
 
 export default function Home() {
