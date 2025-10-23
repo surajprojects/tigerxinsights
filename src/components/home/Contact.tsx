@@ -26,9 +26,11 @@ export default function Contact() {
 
     return (
         <>
+            {/* Success Message */}
             {showMessage &&
                 <p className="text-green-500 border border-gray-100 font-medium px-4 py-2 rounded-xl shadow-sm text-sm">Congratulations message received 🎉🎉🎉</p>
             }
+            {/* Error Message */}
             {showErrorMessage &&
                 <p className="text-red-500 border border-gray-100 font-medium px-4 py-2 rounded-xl shadow-sm text-sm">❌ Something went wrong!!!</p>
             }
