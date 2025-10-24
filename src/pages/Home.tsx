@@ -11,7 +11,7 @@ import SectionHeader from "../components/home/SectionHeader";
 export default function Home() {
     return (
         <>
-            <main className="w-full">
+            <div className="w-full">
                 {/* Hero section */}
                 <section id="hero" className="bg-linear-to-br from-[#f8f5fe] to-[#f6f9fe] w-full py-36 md:py-44 pb-12 md:pb-20 flex justify-center">
                     <Hero />
@@ -144,7 +144,7 @@ export default function Home() {
                     />
                     <Contact />
                 </section>
-            </main>
+            </div>
         </>
     );
 };
