@@ -26,7 +26,7 @@ This web app is deployed using [Vercel](https://vercel.com/) by Tiger. You can a
 
 ## ScreenShots
 
-![Screenshot](/public/tigerxinsights-screenshot.jpg)
+![Screenshot](/public/tigerxinsights-app-screenshot.jpg)
 
 ## Installation & Setup
 
