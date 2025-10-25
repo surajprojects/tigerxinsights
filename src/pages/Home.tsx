@@ -133,6 +133,36 @@ export default function Home() {
                             liveLink="https://weather-app-xi-five-57.vercel.app/"
                             imageLink="https://raw.githubusercontent.com/surajprojects/weather-app/refs/heads/prod/weather-app-screenshot.png"
                         />
+                        {/* Project 5 */}
+                        <ProjectCard
+                            key={5}
+                            title="Countdown Timer"
+                            description="A simple and responsive countdown timer built using HTML, CSS, and JavaScript."
+                            techStack={[
+                                "HTML",
+                                "CSS",
+                                "JavaScript",
+                            ]}
+                            codeLink="https://github.com/surajprojects/timer-react"
+                            liveLink="https://countdown-timer-navy-chi.vercel.app/"
+                            imageLink="https://raw.githubusercontent.com/surajprojects/timer-react/refs/heads/prod/countdown-timer-screenshot.png"
+                        />
+                        {/* Project 6 */}
+                        <ProjectCard
+                            key={6}
+                            title="Tiger Insights"
+                            description="This is the personal portfolio website of Tiger (Suraj Chauhan), built using React + Vite + Tailwind CSS. It showcases projects, skills, and provides a contact form powered by Formspree."
+                            techStack={[
+                                "Vite",
+                                "React",
+                                "Tailwind",
+                                "TypeScript",
+                                "Formspree",
+                            ]}
+                            codeLink="https://github.com/surajprojects/tigerxinsights"
+                            liveLink="https://tigerxinsights.com/"
+                            imageLink="https://raw.githubusercontent.com/surajprojects/tigerxinsights/refs/heads/main/public/tigerxinsights-app-screenshot.jpg"
+                        />
                     </div>
                 </section>
                 {/* Get in touch */}

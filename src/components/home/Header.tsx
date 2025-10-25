@@ -13,7 +13,7 @@ export default function Header() {
                 <nav className="flex justify-between items-center px-4 py-3 mx-auto w-full xl:max-w-360">
                     {/* Title */}
                     <div className="text-xl font-extrabold font-spacegrotesk whitespace-nowrap shrink bg-clip-text bg-linear-to-r from-[#7c3bed] to-[#3c83f6] text-transparent">
-                        <a href={"/"}>Tiger Insights</a>
+                        <a href={"#"}>Tiger Insights</a>
                     </div>
                     {/* Mobile Header Button */}
                     <button
