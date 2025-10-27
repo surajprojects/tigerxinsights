@@ -19,7 +19,7 @@ export default function ProjectCard({
 }) {
     return (
         <>
-            <div className="rounded-xl border border-gray-200 w-full md:max-w-xl hover:shadow-2xl duration-300 ease-in-out">
+            <div className="rounded-xl border border-gray-200 w-full md:max-w-xl h-full hover:shadow-2xl duration-300 ease-in-out">
                 {/* Card Image Container */}
                 <div className="w-full max-h-72 overflow-hidden rounded-t-xl flex items-center justify-center">
                     <img
