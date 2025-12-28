@@ -94,6 +94,28 @@ export default function Home() {
                         {/* Project 2 */}
                         <ProjectCard
                             key={2}
+                            title="Tiger Classes"
+                            description="Tiger Classes is a fully featured student management system built using Next.js 16, Prisma, PostgreSQL, NextAuth, and TailwindCSS."
+                            techStack={[
+                                "Next.js 16",
+                                "React 19",
+                                "Axios",
+                                "Tailwind",
+                                "TypeScript",
+                                "NextAuth",
+                                "Prisma",
+                                "Recharts",
+                                "React Toastify",
+                                "Lucide React",
+                                "Heroicons",
+                            ]}
+                            codeLink="https://github.com/surajprojects/tigerxclasses"
+                            liveLink="https://tigerxclasses.vercel.app/"
+                            imageLink="https://raw.githubusercontent.com/surajprojects/tigerxclasses/refs/heads/main/tigerxclasses-screenshot.png"
+                        />
+                        {/* Project 3 */}
+                        <ProjectCard
+                            key={3}
                             title="HTML Tag Stripper"
                             description="A simple web app built using HTML, CSS, and JavaScript that strips HTML tags from user input and gives clean text output."
                             techStack={[
@@ -105,9 +127,9 @@ export default function Home() {
                             codeLink="https://github.com/surajprojects/html-tag-stripper"
                             imageLink="https://raw.githubusercontent.com/surajprojects/html-tag-stripper/refs/heads/main/html-tag-stripper-screenshot.png"
                         />
-                        {/* Project 3 */}
+                        {/* Project 4 */}
                         <ProjectCard
-                            key={3}
+                            key={4}
                             title="To-Do List App"
                             description="A responsive To-Do List app built using HTML, CSS, and JavaScript. It allows users to manage tasks efficiently with advanced filtering, search, and sorting features."
                             techStack={[
@@ -119,9 +141,9 @@ export default function Home() {
                             codeLink="https://github.com/surajprojects/simple-todo-app"
                             imageLink="https://raw.githubusercontent.com/surajprojects/simple-todo-app/refs/heads/prod/todo-list-app-screenshot.png"
                         />
-                        {/* Project 4 */}
+                        {/* Project 5 */}
                         <ProjectCard
-                            key={4}
+                            key={5}
                             title="Weather App"
                             description="A responsive weather app built using HTML, CSS, and JavaScript. It fetches live weather data and displays both current and hourly forecast in a clean, modern UI."
                             techStack={[
@@ -133,9 +155,9 @@ export default function Home() {
                             liveLink="https://weather-app-xi-five-57.vercel.app/"
                             imageLink="https://raw.githubusercontent.com/surajprojects/weather-app/refs/heads/prod/weather-app-screenshot.png"
                         />
-                        {/* Project 5 */}
+                        {/* Project 6 */}
                         <ProjectCard
-                            key={5}
+                            key={6}
                             title="Countdown Timer"
                             description="A simple and responsive countdown timer built using HTML, CSS, and JavaScript."
                             techStack={[
@@ -146,22 +168,6 @@ export default function Home() {
                             codeLink="https://github.com/surajprojects/timer-react"
                             liveLink="https://countdown-timer-navy-chi.vercel.app/"
                             imageLink="https://raw.githubusercontent.com/surajprojects/timer-react/refs/heads/prod/countdown-timer-screenshot.png"
-                        />
-                        {/* Project 6 */}
-                        <ProjectCard
-                            key={6}
-                            title="Tiger Insights"
-                            description="This is the personal portfolio website of Tiger (Suraj Chauhan), built using React + Vite + Tailwind CSS. It showcases projects, skills, and provides a contact form powered by Formspree."
-                            techStack={[
-                                "Vite",
-                                "React",
-                                "Tailwind",
-                                "TypeScript",
-                                "Formspree",
-                            ]}
-                            codeLink="https://github.com/surajprojects/tigerxinsights"
-                            liveLink="https://tigerxinsights.com/"
-                            imageLink="https://raw.githubusercontent.com/surajprojects/tigerxinsights/refs/heads/main/public/tigerxinsights-app-screenshot.jpg"
                         />
                     </div>
                 </section>
