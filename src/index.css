@@ -1,24 +1,24 @@
 @font-face {
-    font-family: "SpaceGrotesk";
-    src: url("./assets/fonts/SpaceGrotesk-VariableFont.ttf") format("truetype");
-    font-weight: 400;
+  font-family: "SpaceGrotesk";
+  src: url("./assets/fonts/SpaceGrotesk-VariableFont.ttf") format("truetype");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: "Inter";
-    src: url("./assets/fonts/Inter-VariableFont.ttf") format("truetype");
-    font-weight: 400;
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont.ttf") format("truetype");
+  font-weight: 400;
 }
 
 @import "tailwindcss";
 
 @theme {
-    --font-spacegrotesk: "SpaceGrotesk", sans-serif;
-    --font-inter: "Inter", sans-serif;
+  --font-spacegrotesk: "SpaceGrotesk", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 body {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h1,
@@ -27,21 +27,21 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "SpaceGrotesk", sans-serif;
+  font-family: "SpaceGrotesk", sans-serif;
 }
 
 /* hide scrollbar globally */
 .scrollbar-none::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .scrollbar-none {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
