@@ -1,16 +1,19 @@
+export interface SkillCardType {
+  title: string;
+  description: string;
+  primaryColor: string;
+  secondaryColor: string;
+}
+
+export type SkillCardTypeList = SkillCardType[];
+
 export default function SkillCard({
   title = "Title",
   description = "Description",
-  children,
   primaryColor,
   secondaryColor,
-}: {
-  title?: string;
-  description?: string;
-  primaryColor?: string;
-  secondaryColor?: string;
-  children?: React.ReactNode;
-}) {
+  children,
+}: Partial<SkillCardType> & { children: React.ReactNode }) {
   return (
     <>
       <div className="p-8 rounded-xl border border-gray-200 w-full hover:shadow-lg duration-300 ease-in-out hover:-translate-y-1.5">

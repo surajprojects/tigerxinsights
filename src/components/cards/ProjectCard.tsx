@@ -2,6 +2,17 @@ import Badge from "../ui/Badge";
 import GithubIcon from "../icons/Github";
 import OpenLinkIcon from "../icons/OpenLink";
 
+export interface ProjectCardType {
+  imageLink: string;
+  title: string;
+  description: string;
+  techStack: string[];
+  codeLink: string;
+  liveLink: string;
+}
+
+export type ProjectCardTypeList = ProjectCardType[];
+
 export default function ProjectCard({
   imageLink = "/image-here.png",
   title = "Project Title",
@@ -9,14 +20,7 @@ export default function ProjectCard({
   techStack = ["Html", "Css", "JavaScript"],
   codeLink = "#",
   liveLink = "#",
-}: {
-  imageLink?: string;
-  title?: string;
-  description?: string;
-  techStack?: string[];
-  codeLink?: string;
-  liveLink?: string;
-}) {
+}: Partial<ProjectCardType>) {
   return (
     <>
       <div className="rounded-xl border border-gray-200 w-full md:max-w-xl h-full hover:shadow-2xl duration-300 ease-in-out">
