@@ -21,9 +21,9 @@ export default function Hero() {
         <p className="text-[#71717a] text-xl md:text-2xl max-w-2xl my-6 md:my-10 font-stretch-expanded">
           Full Stack Web Developer passionate about building with TypeScript, React, and Node.js 💻
         </p>
-        <p className="text-[#71717a] text-lg  max-w-xl font-stretch-expanded">
-          Exploring the wonders of computers & software development! 🌟 Sharing insights at
-          #tigerxinsights
+        <p className="text-[#71717a] text-lg flex flex-col max-w-xl font-stretch-expanded">
+          <span>Developer • Gamer • Teacher</span>
+          <span>Exploring the wonders of computers & software development!</span>
         </p>
         {/* Buttons */}
         <div className="block sm:flex my-10">

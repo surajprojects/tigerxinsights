@@ -17,7 +17,7 @@ export default function SocialHandles() {
         </li>
         {/* LinkedIn */}
         <li className="m-2 duration-300 ease-out bg-white border border-[#e4e4e7] rounded-full p-2 hover:cursor-pointer hover:border-[#3c83f6] hover:bg-[#3c83f6]/10 shadow-sm text-black">
-          <a href="https://www.linkedin.com/in/tigerxinsights" target="_blank">
+          <a href="https://www.linkedin.com/in/surajchauhan23" target="_blank">
             <div className="size-5">
               <LinkedInIcon />
             </div>
@@ -25,7 +25,7 @@ export default function SocialHandles() {
         </li>
         {/* Twitter */}
         <li className="m-2 duration-300 ease-out bg-white border border-[#e4e4e7] rounded-full p-2.5 hover:cursor-pointer hover:border-[#7c3bed] hover:bg-[#7c3bed]/10 shadow-sm text-black">
-          <a href="https://x.com/tigerxinsights" target="_blank">
+          <a href="https://x.com/surajbuilds23" target="_blank">
             <div className="size-4">
               <TwitterXIcon />
             </div>
@@ -33,7 +33,7 @@ export default function SocialHandles() {
         </li>
         {/* Youtube */}
         <li className="m-2 duration-300 ease-out bg-white border border-[#e4e4e7] rounded-full p-2 hover:cursor-pointer hover:border-[#fb6f92] hover:bg-[#fb6f92]/10 shadow-sm text-black">
-          <a href="https://www.youtube.com/@tigerxinsights" target="_blank">
+          <a href="https://www.youtube.com/@suraj-builds" target="_blank">
             <div className="size-5">
               <YoutubeIcon />
             </div>

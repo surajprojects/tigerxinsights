@@ -13,8 +13,8 @@ export default function Footer() {
         </div>
         <div className="flex flex-col justify-center items-center py-8 px-5">
           <div className="text-sm text-[#7c706a] font-medium text-center flex flex-col items-center">
-            <span>Made with ❤️ by TigerxInsights &copy; 2025-2026</span>
-            <span>Your insights, our priority</span>
+            <span>Made with ❤️ by Suraj Builds &copy; 2025-2026</span>
+            <span>Discovering the wonders of computers and more!</span>
           </div>
         </div>
       </footer>
