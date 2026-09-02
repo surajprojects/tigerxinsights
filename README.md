@@ -1,6 +1,6 @@
 ---
 
-# Tiger Insights
+# Suraj Builds
 
 This is the **personal portfolio website** of Tiger (Suraj Chauhan), built using **React + Vite + Tailwind CSS**.  
 It showcases projects, skills, and provides a contact form powered by **Formspree**.
@@ -22,11 +22,11 @@ It showcases projects, skills, and provides a contact form powered by **Formspre
 
 ## Deployment
 
-This web app is deployed using [Vercel](https://vercel.com/) by Tiger. You can access the live version here: [Tiger Insights](https://tigerxinsights.com/)
+This web app is deployed using [Vercel](https://vercel.com/) by Tiger. You can access the live version here [Suraj Builds](https://surajbuilds.vercel.app)
 
 ## ScreenShots
 
-![Screenshot](/public/tigerxinsights-app-screenshot.jpg)
+![Screenshot](/public/surajbuilds-app-screenshot.jpg)
 
 ## Installation & Setup
 
